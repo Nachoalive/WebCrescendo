@@ -1,32 +1,91 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #e8e8e8;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-h1, ul {
-    font-family: 'Times New Roman', Times, serif;
+header {
+    background: #cfd2e6;
+    color: black;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.rayitas {
+    display: none;
+    font-size: 24px;
+    
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+#cajitacheck {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .rayitas {
+        display: block;
+        
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #8787e8;
+        padding: 20px 0;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .menu a {
+        font-size: 24px;
+    }
+
+    .menu a:hover {
+        background-color: #afafe6;
+    }
+
+    #cajitacheck:checked + .rayitas + .menu {
+        display: flex;
+    }
 }
 
 h1 {
     text-align: center;
 }
 
-nav {
-    margin: 0;
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    background-color: rgb(218, 223, 233);
-}
 
 .menu li a {
     text-decoration: none; 
     color: black;
     padding: 20px;
     display: block;
+    
 }
 
 .menu li {
@@ -36,7 +95,6 @@ nav {
 
 .logocrescendo {
     height: 80px;
-    border-radius: 5px;
 }
 
 .bloque1 , .bloque2 {
@@ -59,17 +117,4 @@ iframe {
 
 h2 {
     padding-left: 50px;
-}
-
-.menuhamburquesa2 {
-    font-size: 30px;
-    float: left;
-    display: none;
-    
-}
-
-@media (max-width : 850px) {
- .menuhamburquesa2 {
-    display: block;
- }
 }
