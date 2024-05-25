@@ -1,21 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #e8e8e8;
+}
+
+h1, ul {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
     text-align: center;
 }
 
-.menu {
+nav {
+    margin: 0;
+    width: 100%;
     list-style: none;
     padding: 0;
     background-color: rgb(218, 223, 233);
-    max-width: 1000px;
-    margin: auto;
-}
-
-h1, ul {
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .menu li a {
@@ -31,7 +35,8 @@ h1, ul {
 }
 
 .logocrescendo {
-    width: 80px;
+    height: 80px;
+    border-radius: 5px;
 }
 
 .bloque1 , .bloque2 {
@@ -54,4 +59,17 @@ iframe {
 
 h2 {
     padding-left: 50px;
+}
+
+.menuhamburquesa2 {
+    font-size: 30px;
+    float: left;
+    display: none;
+    
+}
+
+@media (max-width : 850px) {
+ .menuhamburquesa2 {
+    display: block;
+ }
 }
