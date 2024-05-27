@@ -24,6 +24,7 @@ nav {
     padding: 0 20px;
 }
 
+
 .rayitas {
     display: none;
     font-size: 24px;
@@ -36,11 +37,17 @@ nav {
     margin: 0;
     display: flex;
 }
+
+.menu li:hover {
+    background-color: #a0aaed;
+    height: 100%;
+}
+
 #cajitacheck {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .rayitas {
         display: block;
         
@@ -74,8 +81,25 @@ nav {
         display: flex;
     }
 
-    .container {
+    .contedorhome .imageneshome{
+        width: 200px;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
 
+    .descripciontalleres {
+        width: 90%;
+        grid
+    }
+
+    .descripciontalleres {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imgtalleres {
+        margin-right: 0;
     }
 }
 
@@ -111,10 +135,12 @@ h1 {
 
 h2 , h3 {
     padding-left: 30px;
-    padding-top: 80px;
+    padding-top: 0px;
 }
 
 .descripciontalleres {
+    display: flex;
+    align-items: center;
     margin: 50px auto;
     padding-bottom: 80px;
     width: 95%;
@@ -127,21 +153,21 @@ h2 , h3 {
     border-radius: 10px;
 }
 
-.container {
+.contedorhome {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-around;
     padding: 20px;
 }
 
-.banner {
+.imageneshome {
     width: 300px;
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 10px;
 }
 
-.banner img {
+.imageneshome img {
     width: 100%;
     height: 180px;
     display: block;
@@ -175,3 +201,7 @@ footer ul li {
     margin-bottom: 10px; 
 }
 
+.mapa {
+padding: 15px 15px 15px 15px;
+
+}
