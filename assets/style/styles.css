@@ -101,19 +101,42 @@ nav {
     .imgtalleres {
         margin-right: 0;
     }
+
+    .h2contacto {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .slide {
+        width: 400px;
+        padding: 15px 15px 15px 15px;
+    }
+
+    slide .carousel-inner img {
+        width: 80%;
+        height: auto;
+    }
 }
 
 h1 {
     text-align: center;
 }
 
+.slide {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.slide .carousel-inner img {
+    width: 100%;
+    height: auto;
+}
 
 .menu li a {
     text-decoration: none; 
     color: black;
     padding: 20px;
     display: block;
-    
 }
 
 .menu li {
@@ -176,7 +199,7 @@ h2 , h3 {
 
 
 footer {
-    background-color: #333;
+    background-color: #cfd2e6;
     color: #fff;
     padding: 20px;
     display: flex;
