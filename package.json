@@ -1,0 +1,14 @@
+{
+  "name": "crescendo",
+  "version": "1.0.0",
+  "description": "Web para escuela de musica Crescendo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crescendo"
+  ],
+  "author": "nachoalive",
+  "license": "ISC"
+}
