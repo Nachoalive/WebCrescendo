@@ -236,4 +236,15 @@ footer ul li {
   text-align: center;
 }
 
+.contenedorwelcom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textoindex {
+  width: 80%;
+  background-color: #e7e8f0;
+}
+
 /*# sourceMappingURL=styles.css.map */
