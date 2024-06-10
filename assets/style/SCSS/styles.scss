@@ -11,7 +11,7 @@ body {
 
 header {
     background: #cfd2e6;
-    color: black;
+    color: rgb(185, 204, 233);
     padding: 10px 0;
     position: relative;
 }
@@ -23,7 +23,6 @@ nav {
     max-width: 1200px;
     padding: 0 20px;
 }
-
 
 
 .rayitas {
@@ -118,8 +117,17 @@ nav {
         padding: 5% 5% 5% 5%;
     }
 
-}
+    .profes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .imgprofes {
+        width: 120px; 
+        height: 180px;
+    }
+
+}
 
 
 h1 {
@@ -272,4 +280,96 @@ padding: 15px 15px 15px 15px;
     width: 80%;
     background-color: #e7e8f0;
 
+}
+
+.profes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.imgprofes {
+    display: inline-block;
+    overflow: hidden; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px; 
+    height: 350px; 
+    
+}
+
+.imgprofes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.imgprofes:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.eventos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.evento {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.evento .fecha {
+    width: 20%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.evento .descripcion {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evento .descripcion p {
+    margin: 0 0 10px;
+}
+
+.evento .detalles {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.evento .detalles li {
+    margin-bottom: 5px;
+}
+
+.evento .imgevento {
+    width: 30%;
+    overflow: hidden;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.evento .imgevento img {
+    width: 100%;
+    height: auto;
 }
