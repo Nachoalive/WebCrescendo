@@ -4,12 +4,17 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "fuenteh1";
+  src: url(../../fonts/Pacifico-Regular.ttf);
+}
 body {
   background-color: #e8e8e8;
   font-family: "Times New Roman", Times, serif;
 }
 
 header {
+  height: 120px;
   background: #cfd2e6;
   color: rgb(185, 204, 233);
   padding: 10px 0;
@@ -47,6 +52,7 @@ nav {
 .menu li:hover {
   background-color: #a0aaed;
   height: 100%;
+  border-radius: 5px;
 }
 
 #cajitacheck {
@@ -73,6 +79,7 @@ nav {
   }
   .menu a {
     font-size: 24px;
+    font-weight: bold;
   }
   .menu a:hover {
     background-color: #afafe6;
@@ -115,9 +122,50 @@ nav {
     width: 120px;
     height: 180px;
   }
+  .divcontacto {
+    padding: 15px;
+  }
+  .h2contacto {
+    font-size: 20px;
+  }
+  input[type=text],
+  input[type=email],
+  textarea {
+    font-size: 14px;
+  }
+  input[type=submit] {
+    font-size: 14px;
+  }
+  .grupo-1 {
+    display: none;
+  }
+  .grupo-2 {
+    font-size: 0.9em;
+  }
+  .divrrss {
+    margin-top: auto;
+  }
+  .box2 {
+    width: 100%;
+    text-align: center;
+  }
+  .grupo-2 {
+    padding: 10px;
+  }
+  .divrrss {
+    width: 100%;
+    text-align: center;
+  }
+  .divrrss a {
+    margin: 0 5px;
+  }
 }
 h1 {
   text-align: center;
+  font-family: "fuenteh1", "Times New Roman", Times, serif;
+  font-size: 80px;
+  background-color: #525A91;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 .slide {
@@ -135,6 +183,8 @@ h1 {
   color: black;
   padding: 20px;
   display: block;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .menu li {
@@ -159,11 +209,14 @@ h2, h3 {
 }
 
 .descripciontalleres {
+  background-color: white;
   display: flex;
   align-items: center;
   margin: 50px auto;
   padding-bottom: 80px;
   width: 95%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .imgtalleres {
@@ -171,6 +224,17 @@ h2, h3 {
   float: left;
   margin-right: 15px;
   border-radius: 10px;
+  margin: 5px 5px;
+}
+
+.preservaclase {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .contedorhome {
@@ -237,54 +301,45 @@ h2, h3 {
 }
 
 footer {
-  background-color: #cfd2e6;
-  color: #fff;
-  padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #cfd2e6;
+  margin-top: 50px;
+}
+
+.imgfooter {
+  display: flex;
   align-items: center;
+  width: 200px;
 }
 
-footer img {
-  max-width: 100px;
-}
-
-footer ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.box2 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
 }
 
-footer .classrrss {
-  margin-bottom: 20px;
-}
-
-footer ul li {
-  margin-bottom: 10px;
-}
-
-.divrrss {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.divrrss h3 {
-  margin-bottom: 10px;
-  font-size: 1.2em;
+.divrrss a {
+  margin-right: 10px;
 }
 
 .linkrrss {
   text-decoration: none;
-  margin: 0 10px;
-  color: inherit;
+  font-size: 30px;
+  margin: 10px;
 }
 
-.iconrrss {
-  font-size: 30px;
+.face1 {
   color: blue;
+}
+
+.insta2 {
+  color: black;
+}
+
+.yout3 {
+  color: red;
 }
 
 .mapa {
@@ -303,15 +358,29 @@ footer ul li {
   text-align: center;
 }
 
-.contenedorwelcom {
+.contenedorwelcome {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px;
+  background-color: #fafafa;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
 }
 
 .textoindex {
-  width: 80%;
+  width: 100%;
   background-color: #e7e8f0;
+  text-align: center;
+}
+
+.pintro {
+  width: 90%;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
 }
 
 .profes {
@@ -367,6 +436,9 @@ footer ul li {
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
+  padding-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .evento .descripcion {
@@ -374,10 +446,8 @@ footer ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.evento .descripcion p {
-  margin: 0 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .evento .detalles {
@@ -401,6 +471,49 @@ footer ul li {
 .evento .imgevento img {
   width: 100%;
   height: auto;
+}
+
+.divcontacto {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.h2contacto {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.textarea {
+  resize: vertical;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
