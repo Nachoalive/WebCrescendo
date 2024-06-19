@@ -10,7 +10,7 @@
 }
 body {
   background-color: #e8e8e8;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -27,14 +27,19 @@ header {
   z-index: 1000;
   padding: 20px;
   transition: all 0.3s ease;
+  height: 100px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  width: 100%;
   padding: 0 20px;
+}
+
+.classheader .navclass li a {
+  font-size: 16px;
 }
 
 .rayitas {
@@ -159,13 +164,21 @@ nav {
   .divrrss a {
     margin: 0 5px;
   }
+  .logocrescendo2 {
+    display: none;
+  }
+  .academiah2, h1 {
+    font-size: 40px;
+  }
+  .textoindex p {
+    text-align: center;
+  }
 }
-h1 {
+.academiah2, h1 {
   text-align: center;
   font-family: "fuenteh1", "Times New Roman", Times, serif;
   font-size: 80px;
-  background-color: #525A91;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  text-shadow: 2px 3px 7px #827c7c;
 }
 
 .slide {
@@ -176,6 +189,10 @@ h1 {
 .slide .carousel-inner img {
   width: 100%;
   height: auto;
+}
+
+.carousel-inner .carousel-item {
+  height: 70%;
 }
 
 .menu li a {
@@ -360,20 +377,27 @@ footer {
 
 .contenedorwelcome {
   display: flex;
-  justify-content: center;
   align-items: center;
   border: 2px;
-  background-color: #fafafa;
+  background-color: #e7e8f0;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  width: 80%;
+  width: 100%;
   margin: auto;
   border-radius: 10px;
+  height: 400px;
+}
+
+.logocrescendo2 {
+  width: 405px;
 }
 
 .textoindex {
   width: 100%;
   background-color: #e7e8f0;
-  text-align: center;
+  text-align: left;
+  height: 100%;
+  margin-left: 10px;
+  font-size: 14px;
 }
 
 .pintro {
