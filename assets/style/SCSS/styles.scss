@@ -49,7 +49,9 @@ nav {
 
 .rayitas {
     display: none;
-    font-size: 24px;
+    font-size: 50px;
+    color: black;
+    
     
 }
 
@@ -68,6 +70,129 @@ nav {
 }
 
 #cajitacheck {
+    display: none;
+}
+
+
+.contedorhome {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+.imageneshome {
+    position: relative;  
+  }
+
+.imageneshome:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+
+.preservaclase {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.preservaclase2 {
+    padding: 10px 20px;
+    height: 30px;
+    font-size: 12px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.eventos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.evento .imgevento img {
+    width: 100%;
+    height: auto;
+}
+
+.evento {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.evento .fecha {
+    background-image: url(./../../imagenes/calendario.png);
+    background-size: 170px 170px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 20%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 180px;
+    
+}
+
+
+.evento .fecha p {
+    margin-top: 25px;
+}
+
+
+.evento .descripcion {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.pdescriocion {
+    background-color:#404040;
+    color: white;
+}
+
+.evento .detalles {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.evento .detalles li {
+    margin-bottom: 5px;
+}
+
+.evento .imgevento {
+    width: 30%;
+    overflow: hidden;
+    max-width: 200px;
+    border-radius: 10px;
+}
+.pfecha2, .pfecha3 {
     display: none;
 }
 
@@ -106,12 +231,43 @@ nav {
         display: flex;
     }
 
-    .contedorhome .imageneshome{
-        width: 200px;
-        height: auto;
-        display: block;
-        border-radius: 10px;
+    .videoyoutube {
+    margin-top: 15px;
+    
     }
+
+    
+    .contedorhome {
+       
+        grid-template-columns: auto;
+        gap: 10px;
+        padding: 10px;
+        margin-left: 5%;
+        text-align: center;    
+    }
+
+    .imageneshome img {
+        width: 80%;
+        height: auto;
+        margin: 2%;
+
+    }
+
+    .imageneshome:hover {
+        transform: none;
+        transition: none;
+    }
+
+    .h5clase {
+        display: inline;
+        font-size: 20px;
+        
+    }
+
+    .textosobreimg {
+        display: none;
+    }
+
 
     .descripciontalleres {
         width: 90%;
@@ -202,20 +358,57 @@ nav {
         margin: 0 5px;
       }
     
+
+
     .logocrescendo2 {
         display: none;
     }
 
-    .academiah2, h1 {
-        font-size: 40px;
-    }
 
     .textoindex p{
         text-align: center;
+    
     }
+
+.evento {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+ .evento .fecha {
+   display: none;
+ }
+
+ .imgevento {
+     display: none;
+     width: none;
+ }
+
+ .evento .descripcion {
+    width: 100%;
 }
 
 
+
+.pfecha2{
+    display: block;
+    background: linear-gradient(black,rgb(172, 170, 170),black);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 100%;
+}
+
+
+
+
+}
+
+h5 {
+    display: none;
+}
 .academiah2, h1 {
     text-align: center;
     font-family:"fuenteh1",'Times New Roman', Times, serif;
@@ -268,10 +461,34 @@ nav {
     
 }
 
-h2 , h3 {
-    padding-left: 30px;
-    padding-top: 0px;
+.classh2div ,h2 {
+    text-align: center;
 }
+
+.classh2{
+    display: inline-block;
+    position: relative;
+    margin: 50px;
+    
+}
+
+.classh2::after,.classh2::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: #333;
+    top: 0.6em;
+}
+
+.classh2::before {
+    left: -140px;
+}
+
+.classh2::after {
+    right: -140px;
+}
+
 
 .descripciontalleres {
     background-color: white;
@@ -292,15 +509,7 @@ h2 , h3 {
     margin: 5px 5px;
 }
 
-.preservaclase {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #007BFF;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+
 
 
 
@@ -319,22 +528,12 @@ h2 , h3 {
 // // // *******************
 
 
-.contedorhome {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 10px;
-    margin-left: 5%;
-}
 
-.imageneshome {
-    position: relative;  
-  }
   
 
 .gallery__img {
     width: 80%;
-    height: 250px;
+    height: 90%;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -357,10 +556,7 @@ h2 , h3 {
 
 // }
 
-.imageneshome:hover {
-    transform: scale(1.1);
-    transition: all 0.3s;
-}
+
 
 // .imageneshome img {
 //     width: 100%;
@@ -385,8 +581,8 @@ h2 , h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    margin-left: 5%;
+    width: 90%;
+    margin-left: 7%;
 }
 
 .imgscursos {
@@ -485,11 +681,12 @@ padding: 15px 15px 15px 15px;
     width: 100%;
     margin: auto;
     border-radius: 10px;
-    height: 400px;
+    // height: 400px;
 }
 
 .logocrescendo2 {
     width: 405px;
+    
 }
 
 .textoindex {
@@ -544,69 +741,12 @@ padding: 15px 15px 15px 15px;
 }
 
 
-.eventos-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-}
-
-.evento {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-}
+// .fecha {
+//     background-image: url(/assets/imagenes/calendario.png);
+// }
 
 
-.evento .fecha {
-    width: 20%;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding-top: 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-}
 
-.evento .descripcion {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-
-
-.evento .detalles {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-
-.evento .detalles li {
-    margin-bottom: 5px;
-}
-
-.evento .imgevento {
-    width: 30%;
-    overflow: hidden;
-    max-width: 200px;
-    border-radius: 10px;
-}
-
-.evento .imgevento img {
-    width: 100%;
-    height: auto;
-}
 .divcontacto {
     max-width: 600px;
     margin: 0 auto;
